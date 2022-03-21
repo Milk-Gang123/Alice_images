@@ -107,6 +107,7 @@ def get_city(req):
         if entity['type'] == 'YANDEX.GEO':
             # возвращаем None, если не нашли сущности с типом YANDEX.GEO
             return entity['value'].get('city', None)
+    #gg
 
 
 def get_first_name(req):
