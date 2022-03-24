@@ -1,1 +1,1 @@
-web: python app.py
+web: python geo-app.py
