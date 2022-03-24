@@ -27,8 +27,9 @@ def get_country(city_name):
     response = requests.get(url, params)
     json = response.json()
     point_str = \
-    json["response"]["GeoObjectCollection"]["featureMember"][0]["GeoObject"]["metaDataProperty"]["GeocoderMetaData"][
-        "AddressDetails"]["Country"]["CountryName"]
+        json["response"]["GeoObjectCollection"]["featureMember"][0]["GeoObject"]["metaDataProperty"][
+            "GeocoderMetaData"][
+            "AddressDetails"]["Country"]["CountryName"]
 
     return point_str
 
